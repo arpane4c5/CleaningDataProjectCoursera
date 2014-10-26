@@ -16,13 +16,14 @@ analyseSets<-function()
 
      
      #merging both the datasets
-     mergedSet<-merge(trainSet,testSet,all=TRUE)
+     mergedSet<-merge(trainSet,testSet)
      
      #required features
      reqFeatureIndex<-grep(paste(c("mean","std"),collapse="|"),featureNames$V2)
      
      
      reqSet<-mergedSet[,reqFeatureIndex]
+     reqSet<-cbind(reqSet,mergedSet$subject)
      
-     
+     reqSet
 }

@@ -1,0 +1,14 @@
+# Variables Description
+
+## The data should be in the directory "UCIDataset". You can simply rename the directory that you downloaded to "UCIDataset".
+
+## Variables
+labels: Stored the activity labels of the dataset.
+subTrain: stores the subjects IDs for the training set.
+subTest:  stores the subjects IDs for the testing set.
+trainSet: stores the training dataset values
+testSet: stores the testing dataset values
+mergedSet: stores the merged dataset values of the training and testing datasets
+reqFeatureIndex: stores the feature indexes corresponding to the means and standard deviations.
+reqSet: stores the merged dataset for only the mean values and the standard deviations
+
